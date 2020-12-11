@@ -2,7 +2,7 @@
 
 🎁 Aplicação de compra, implementada com  Node.js banco MYSql e utilizando o ORM Sequelize para o mapeamento dos dados.
 
-[![GitHub license](https://img.shields.io/github/license/Matheus-Souza1/TIStore)]
+![GitHub license](https://img.shields.io/github/license/Matheus-Souza1/TIStore)
 ![](https://img.shields.io/badge/languege-Portuguese-yellow)
 [![GitHub stars](https://img.shields.io/github/stars/Matheus-Souza1/TIStore?color=FFF300&style=social)](https://github.com/Matheus-Souza1/TIStore)
 
@@ -66,7 +66,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 <span> Feito com ❤️ por Matheus Souza 👋 Entre em contato! </span> 
 </a> 
 
-[![Linkedin Badge](https://www.linkedin.com/in/matheus-souza-4a4b19189/)
+![Linkedin Badge](https://www.linkedin.com/in/matheus-souza-4a4b19189/)
 
 ### :page_facing_up: **Licença**
 
