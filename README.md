@@ -66,7 +66,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 <span> Feito com ❤️ por Matheus Souza 👋 Entre em contato! </span> 
 </a> 
 
-![Linkedin Badge](https://www.linkedin.com/in/matheus-souza-4a4b19189/)
+[![Linkedin Badge](https://img.shields.io/badge/Matheus%20Souza%20-blue?Style=flat&logo=linkedin&labelColor=blue=https://www.linkedin.com/in/matheus-souza-4a4b19189/)](https://www.linkedin.com/in/matheus-souza-4a4b19189/)
 
 ### :page_facing_up: **Licença**
 
