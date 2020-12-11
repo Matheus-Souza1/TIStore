@@ -11,7 +11,7 @@ async function Salvar(usuario) {
 }
 
 async function BuscarPorId(id) {
-    return await Usuario.findByPk(id);
+    return await Usuario.findById(id);
 }
 
 async function BuscarTodos() {

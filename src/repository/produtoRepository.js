@@ -14,7 +14,7 @@ async function Salvar(produto) {
 }
 
 async function BuscarPorId(id) {
-    return await Produtos.findByPk(id);
+    return await Produtos.findById(id);
 }
 
 async function BuscarTodos() {

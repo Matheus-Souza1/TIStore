@@ -1,24 +1,25 @@
-const userRepository = require("../repository/usuarioRepository")
+const usuarioRepository = require("../repository/usuarioRepository")
 
 
 module.exports = {
     async show(req, res) {
         try {
             const { id } = req.params;
-            const usuario = await userRepository.BuscarPorId(id);
-
+            const usuario = await usuarioRepository.BuscarPorId(id);
+            
             return res.json({ isSuccessful: usuario ? true : false, data: usuario, message: usuario ? "" : `O usuario com o id ${id} não foi encontrado!` });
 
         } catch (error) {
+            console.log(usuario)
             return res.json({ isSuccessful: false, data: null, message: JSON.stringify(error) });
         }
     },
     async index(req, res) {
         try {
-            const usuarios = await userRepository.BuscarTodos();
+            const usuarios = await usuarioRepository.BuscarTodos();
             
             return res.json({ isSuccessful: true, data: usuarios });
-            
+
         } catch (error) {
             return res.json({ isSuccessful: false, data: null, message: JSON.stringify(error) });
         }
@@ -26,7 +27,7 @@ module.exports = {
     async store(req, res) {
         try {
             const { nome, senha, email, telefone, cpf } = req.body;
-            let usuario = await userRepository.Salvar({ nome, senha, email, telefone, cpf })
+            let usuario = await usuarioRepository.Salvar({ nome, senha, email, telefone, cpf })
 
 
             return res.json({ isSuccessful: true, data: usuario });
@@ -39,7 +40,7 @@ module.exports = {
     async login(req, res) {
         try {
             const { senha, email, } = req.body;
-            let usuario = await userRepository.Login({ email, senha });
+            let usuario = await usuarioRepository.Login({ email, senha });
 
             if(!usuario){
                 res.status(404).send({

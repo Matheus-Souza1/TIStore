@@ -15,7 +15,7 @@ async function Salvar(endereco) {
 }
 
 async function BuscarPorId(id) {
-    return await Enderecos.findByPk(id);
+    return await Enderecos.findById(id);
 }
 
 async function BuscarTodos() {

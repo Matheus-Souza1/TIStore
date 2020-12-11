@@ -7,7 +7,6 @@ module.exports = {
             const produto = await produtoRepository.BuscarPorId(id);
 
             return res.json({ isSuccessful: produto ? true : false, data: produto, message: produto ? "" : `O produto com o id ${id} não foi encontrado!` });
-       
         } catch (error) {
             return res.json({ isSuccessful: false, data: null, message: JSON.stringify(error) });
         }
@@ -16,7 +15,7 @@ module.exports = {
     async index(req, res) {
         try {
             const produtos = await produtoRepository.BuscarTodos();
-
+           
             return res.json({ isSuccessful: true, data: produtos });
 
         } catch (error) {

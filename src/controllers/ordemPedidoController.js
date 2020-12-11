@@ -22,10 +22,11 @@ module.exports = {
             let code = Math.floor(Math.random() * (999 + 1));
 
             let produto = await produtoRepository.BuscarPorId(produtoId);
+            
             if (!produto) {
                 return res.json({ isSuccessful: false, data: null, message: "Produto nao existe" });
             }
-
+            
             let pedido = await pedidoRepository.Salvar({
                 codigo: code,
                 clienteId: clienteId,
@@ -52,6 +53,7 @@ module.exports = {
             return res.json({ isSuccessful: true, data: ordemPedido, message: "Ordem pedido adicionado" });
 
         } catch (error) {
+            console.log(error)
             return res.json({ isSuccessful: false, data: null, message: "error:" + error });
         }
     },

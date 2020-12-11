@@ -15,7 +15,7 @@ async function Salvar(pedido) {
 }
 
 async function BuscarPorId(id) {
-    return await Pedidos.findByPk(id);
+    return await Pedidos.findById(id);
 }
 
 async function Atualizar(id, pedido) {
